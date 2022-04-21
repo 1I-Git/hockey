@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import {EquiposService} from '../../services/equipos.service';
+
 @Component({
   selector: 'app-equipos',
   templateUrl: './equipos.component.html',
@@ -14,6 +17,10 @@ export class EquiposComponent implements OnInit {
   ngOnInit(): void {
       this.equipos = this._equiposService.getEquipos();
       console.log(this.equipos);
+  }
+
+  verEquipo(id:number){
+
   }
 
 }
