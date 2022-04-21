@@ -1,56 +1,21 @@
 <h1>Equipos <span>NHL</span></h1>
 
-<div class="card-group">
-  <div class="card">
-    <img
-      class="card-img-top"
-      src="assets/img/ducks.webp"
-      alt="Card image cap"
-    />
+<div class="grid-container">
+  <div class="card" *ngFor="let e of equipos">
+    <img class="img-responsive center-block d-block mx-auto" [src]="e.img" [alt]="e.nombre" />
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">{{ e.nombre }}</h5>
       <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+        {{ e.bio }}
       </p>
       <p class="card-text">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">{{ e.division }}</small>
       </p>
     </div>
-  </div>
-  <div class="card">
-    <img
-      class="card-img-top"
-      src="assets/img/ducks.webp"
-      alt="Card image cap"
-    />
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        This card has supporting text below as a natural lead-in to additional
-        content.
-      </p>
-      <p class="card-text">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </p>
-    </div>
-  </div>
-  <div class="card">
-    <img
-      class="card-img-top"
-      src="assets/img/ducks.webp"
-      alt="Card image cap"
-    />
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This card has even longer content than the first to
-        show that equal height action.
-      </p>
-      <p class="card-text">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </p>
-    </div>
+    <button type="button" class="btn btn-outline-primary btn-block">
+      Ver más...
+    </button>
   </div>
 </div>
+
+

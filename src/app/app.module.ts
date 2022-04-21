@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 //Rutas
-import {APP_ROUTING} from './app.routes';
+import { APP_ROUTING } from './app.routes';
+
+//Services
+import { EquiposService } from './services/equipos.service';
 
 //Componentes
 import { AppComponent } from './app.component';
@@ -17,13 +20,10 @@ import { EquiposComponent } from './components/equipos/equipos.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    EquiposComponent
+    EquiposComponent,
   ],
-  imports: [
-    BrowserModule,
-    APP_ROUTING
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, APP_ROUTING],
+  providers: [EquiposService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
