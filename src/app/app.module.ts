@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { EquiposComponent } from './components/equipos/equipos.component';
 import { EquipoComponent } from './components/equipo/equipo.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { EquipoComponent } from './components/equipo/equipo.component';
     AboutComponent,
     EquiposComponent,
     EquipoComponent,
+    BuscadorComponent,
   ],
   imports: [BrowserModule, APP_ROUTING],
   providers: [EquiposService],

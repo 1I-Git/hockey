@@ -68,5 +68,21 @@ export class EquiposService {
      getEquipo(id:number):Equipo[]{
        return this.equipos[id];
      }
+
+     //Buscar un equipo por el NavBar
+     buscarEquipo(textoNavBar:string):Equipo[]{
+      let equipos:Equipo[] = [];
+      textoNavBar = textoNavBar.toLowerCase();
+
+      for(let equipo of this.equipos){
+          let nombre = equipo.nombre.toLowerCase();
+
+          if(nombre.indexOf(textoNavBar) >= 0){
+              equipos.push(equipo);
+          }
+      }
+      return equipos;
+     }
+
     
 }
