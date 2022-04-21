@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import {EquiposService} from '../../services/equipos.service';
-
+import {Equipo} from '../../model/equipo.model';
 @Component({
   selector: 'app-equipos',
   templateUrl: './equipos.component.html',
@@ -25,10 +25,4 @@ export class EquiposComponent implements OnInit {
 
 }
 
-export interface Equipo{
-  nombre: string;
-  bio: string; 
-  img: string;
-  fundado: string;
-  division: string;
-};
+
