@@ -1,28 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import {EquiposService} from '../../services/equipos.service';
-import {Equipo} from '../../model/equipo.model';
+import { EquiposService } from '../../services/equipos.service';
+import { Equipo } from '../../model/equipo.model';
 @Component({
   selector: 'app-equipos',
   templateUrl: './equipos.component.html',
-  styleUrls: ['./equipos.component.css']
+  styleUrls: ['./equipos.component.css'],
 })
 export class EquiposComponent implements OnInit {
-  
-  equipos:Equipo[] = [];
+  equipos: Equipo[] = [];
 
-  constructor( private _equiposService:EquiposService) { }
+  constructor(
+    private equiposService: EquiposService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
-      this.equipos = this._equiposService.getEquipos();
-      console.log(this.equipos);
+    this.equipos = this.equiposService.getEquipos();
+    console.log(this.equipos);
   }
-
-  verEquipo(id:number){
-
+  
+  //Metodo para visualizar un solo equipo pasando el parametro el index del *NgFor
+  verEquipo(id: number) {
+    this.router.navigate(['/equipo', id]);
   }
-
 }
-
-

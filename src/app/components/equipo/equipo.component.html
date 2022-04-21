@@ -1,1 +1,29 @@
-<p>equipo works!</p>
+<h1 class="animated fadeIn">{{ equipo.nombre | uppercase }} <small>({{ equipo.aparicion | date:'y' }})</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast">
+
+  <div class="col-md-4">
+
+    <img [src]="equipo.img" class="img-responsive center-block d-block mx-auto" [alt]="equipo.nombre">
+    <br><br>
+    <a [routerLink]="['/equipos']" class="btn btn-outline-danger btn-block m-4">Regresar</a>
+    <a [routerLink]="['/equipos']" class="btn btn-outline-danger btn-block">Galeria</a>
+
+  </div>
+
+  <div class="col-md-8">
+    <h3>{{ equipo.nombre }}</h3>
+    <hr>
+    <p>
+      {{ equipo.bio }}
+    </p>
+    <div>
+      <img *ngIf="equipo.division == 'West'" class="img-logo" src="assets/img/west.webp" alt="West Division">
+      <img *ngIf="equipo.division == 'East'" class="img-logo" src="assets/img/east.webp" alt="East Division">
+    </div>
+
+
+  </div>
+
+</div>
