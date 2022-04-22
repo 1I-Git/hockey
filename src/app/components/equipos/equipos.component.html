@@ -4,22 +4,22 @@
   <div class="card" *ngFor="let e of equipos; let i = index">
     <img
       class="img-responsive center-block d-block mx-auto"
-      [src]="e.img"
+      [src]="e.img_team"
       [alt]="e.nombre"
     />
     <div class="card-body">
       <h5 class="card-title">{{ e.nombre }}</h5>
       <p class="card-text">
-        {{ e.bio }}
+        {{ e.bio_short }}
       </p>
       <p class="card-text">
-        <small class="text-muted">{{ e.division }}</small>
+        <small class="text-muted">{{ e.fecha }}</small>
       </p>
     </div>
     <button
       (click)="verEquipo(i)"
       type="button"
-      class="btn btn-outline-primary btn-block"
+      class="btn btn-outline-dark btn-block"
     >
       Ver más...
     </button>

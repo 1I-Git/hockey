@@ -1,28 +1,35 @@
-<h1>Buscar: <span>{{texto}}</span></h1>
-<hr>
+<h1>
+  Buscar: <span>{{ texto }}</span>
+</h1>
+<hr />
+
+<div class="row" *ngIf="equipos.length == 0" >
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      No existen resultados con: {{ texto }}
+    </div>
+  </div>
+</div>
 <div class="grid-container">
   <div class="card" *ngFor="let e of equipos; let i = index">
     <img
       class="img-responsive center-block d-block mx-auto"
-      [src]="e.img"
+      [src]="e.img_team"
       [alt]="e.nombre"
     />
     <div class="card-body">
       <h5 class="card-title">{{ e.nombre }}</h5>
       <p class="card-text">
-        {{ e.bio }}
+        {{ e.bio_short }}
       </p>
       <p class="card-text">
         <small class="text-muted">{{ e.division }}</small>
       </p>
     </div>
-    <button
-      
-      type="button"
-      class="btn btn-outline-primary btn-block"
-    >
+    <button type="button" class="btn btn-outline-primary btn-block">
       Ver más...
     </button>
     <!-- <a [routerLink]="['/equipo',i]" class="btn btn-outline-primary">mas</a> -->
   </div>
 </div>
+
