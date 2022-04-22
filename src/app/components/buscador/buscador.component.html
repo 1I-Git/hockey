@@ -3,7 +3,7 @@
 </h1>
 <hr />
 
-<div class="row" *ngIf="equipos.length == 0" >
+<div class="row" *ngIf="equipos.length == 0"; let idx:number = e.id >
   <div class="col-md-12">
     <div class="alert alert-info" role="alert">
       No existen resultados con: {{ texto }}
@@ -23,13 +23,15 @@
         {{ e.bio_short }}
       </p>
       <p class="card-text">
-        <small class="text-muted">{{ e.division }}</small>
+        <small class="text-muted">{{ e.fecha }}</small>
       </p>
     </div>
-    <button type="button" class="btn btn-outline-primary btn-block">
+    <button
+      (click)="verEquipo(idx)"
+      type="button"
+      class="btn btn-outline-dark btn-block"
+    >
       Ver más...
     </button>
-    <!-- <a [routerLink]="['/equipo',i]" class="btn btn-outline-primary">mas</a> -->
   </div>
 </div>
-

@@ -1,4 +1,5 @@
 export interface Equipo{
+    id:number;
     nombre: string;
     alias: string;
     img_team: string;
