@@ -11,7 +11,6 @@ import { EquiposService } from './services/equipos.service';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
 import { EquiposComponent } from './components/equipos/equipos.component';
 import { EquipoComponent } from './components/equipo/equipo.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
@@ -21,7 +20,6 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    AboutComponent,
     EquiposComponent,
     EquipoComponent,
     BuscadorComponent,
