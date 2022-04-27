@@ -1,27 +1,23 @@
 # Hockey
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+Este proyecto se generó con Angular CLI versión 13.3.3.
 
-## Development server
+## Objetivo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Hacer un SPA sencillo con la temática de hockey(NHL) para repasar Angular.
 
-## Code scaffolding
+## Netlify
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://hockey-spa.netlify.app/home
 
-## Build
+## Fuentes
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+https://iconarchive.com/show/hex-icons-by-martz90/nhl-icon.html
 
-## Running unit tests
+https://www.puckmarks.net/nhl-logos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+https://en.wikipedia.org/wiki/National_Hockey_League
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
