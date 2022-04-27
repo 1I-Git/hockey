@@ -5,6 +5,7 @@ Este proyecto se generó con Angular CLI versión 13.3.3.
 ## Objetivo
 
 Hacer un SPA sencillo con la temática de hockey(NHL) para repasar Angular.
+El diseño no es adaptable, no es el objetivo de la práctica.
 
 ## Netlify
 
